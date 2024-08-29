@@ -23,7 +23,7 @@ stopButton.addEventListener('click', () =>
 		if(currentSound)
 		{
 			currentSound.pause();
-			currentSound.Time = 0;
+			currentSound.currentTime = 0;
 			currentSound = null;
 		}
 	});
