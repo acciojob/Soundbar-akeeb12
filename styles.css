@@ -28,7 +28,9 @@ body
 	background-color: #6F2DA8;
 	color:white;
 }
-
+.stop:hover {
+    background-color: #1a237e;
+}
 
 
 
