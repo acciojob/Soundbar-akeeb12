@@ -10,8 +10,28 @@ buttons.forEach(button =>
 			{
 				const soundName = button.getAttribute('data-sound');
 				const audio = new Audio ('sounds/${soundName}.mp3');
-				if(currentSound)
+				if(currentSound){
 					currentSound.pause();
-				currentSound.current
-			})
-	})
+				currentSound.currentTime = 0;
+			}
+				currentSound = audio;
+				audio.play();
+			});
+	});
+stopButton.addEventListener('click', () =>
+	{
+		if(currentSound)
+		{
+			currentSound.pause();
+			currentSound.Time = 0;
+			currentSound = null;
+		}
+	});
+
+
+
+
+
+
+
+
