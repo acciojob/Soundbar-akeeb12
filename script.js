@@ -9,7 +9,7 @@ buttons.forEach(button =>
 		button.addEventListener('click', () =>
 			{
 				const soundName = button.getAttribute('data-sound');
-				const audio = new Audio (`sounds/${soundName}.mp3`);
+				const audio = document.getElementById(`${soundName}-audio`);
 				if(currentSound){
 					currentSound.pause();
 				currentSound.currentTime = 0;
